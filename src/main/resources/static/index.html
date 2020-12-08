@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Chat</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js"></script>
+    <script src="stomp.js"></script>
+</head>
+<body onload="connect()">
+<div>
+    <label>User:</label>
+    <input id="user" type="text"/>
+
+    <label>Your message:</label>
+    <input id="messageToSend" type="text"/>
+    <button onclick="sendMessage()" id="sendButton">Send</button>
+    <p id="response"></p>
+</div>
+
+</body>
+</html>
